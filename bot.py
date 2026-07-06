@@ -1,4 +1,3 @@
-import os
 import json
 import requests
 from bs4 import BeautifulSoup
@@ -21,12 +20,11 @@ def kanallari_cek():
         
         for link in soup.find_all("a", href=True):
             href = link['href']
-            # Link filtreleme
             if "/canli-" in href or "tv" in href:
                 kanal_adi = link.text.strip() if link.text else "Bilinmeyen Kanal"
                 tam_url = href if href.startswith("http") else f"https://www.canlitv.diy{href}"
                 
-                # 'listesi' hatası düzeltildi:
+                # Tekrar edenleri engelleme
                 if not any(k['url'] == tam_url for k in kanal_listesi):
                     kanal_listesi.append({
                         "kanal_adi": kanal_adi,
@@ -43,7 +41,7 @@ def kaydet(veri):
     if veri:
         with open("kanallar.json", "w", encoding="utf-8") as f:
             json.dump(veri, f, ensure_ascii=False, indent=4)
-        print(f"Başarıyla {len(veri)} kanal 'kanallar.json' dosyasına kaydedildi.")
+        print(f"Başarıyla {len(veri)} kanal kaydedildi.")
     else:
         print("Kaydedilecek veri bulunamadı.")
 
