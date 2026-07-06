@@ -15,6 +15,9 @@ jobs:
     - name: Depoyu Klonla
       uses: actions/checkout@v4
 
+    - name: Dosya Yapısını Listele (Hata Ayıklama İçin)
+      run: ls -R
+
     - name: Python Kur
       uses: actions/setup-python@v5
       with:
@@ -26,12 +29,12 @@ jobs:
         pip install requests beautifulsoup4
 
     - name: Botu Çalıştır
-      run: python klasor_adi/güncelleme.py
+      run: python güncelleme.py
 
     - name: Değişiklikleri Gönder
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         git add kanallar.json
-        git commit -m "Saatlik güncelleme: kanallar.json yenilendi" || echo "Değişiklik yok."
+        git commit -m "Saatlik güncelleme" || echo "Değişiklik yok."
         git push
