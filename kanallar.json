@@ -1,0 +1,750 @@
+[
+    {
+        "kanal_adi": "Bilinmeyen Kanal",
+        "url": "https://www.canlitv.diy/tr"
+    },
+    {
+        "kanal_adi": "Genel",
+        "url": "https://www.canlitv.diy/genel-tv-kanallari"
+    },
+    {
+        "kanal_adi": "Dini",
+        "url": "https://www.canlitv.diy/dini-tv-kanallari"
+    },
+    {
+        "kanal_adi": "Yerel",
+        "url": "https://www.canlitv.diy/yerel-tv-kanallari"
+    },
+    {
+        "kanal_adi": "Show TV",
+        "url": "https://www.canlitv.diy/show-tv-izle-1"
+    },
+    {
+        "kanal_adi": "Star TV",
+        "url": "https://www.canlitv.diy/star-tv-canli"
+    },
+    {
+        "kanal_adi": "ATV",
+        "url": "https://www.canlitv.diy/atv-canli"
+    },
+    {
+        "kanal_adi": "Now TV",
+        "url": "https://www.canlitv.diy/now-tv-canli-yayin"
+    },
+    {
+        "kanal_adi": "Tv8",
+        "url": "https://www.canlitv.diy/tv8-izle-4"
+    },
+    {
+        "kanal_adi": "NTV",
+        "url": "https://www.canlitv.diy/ntv-canli-izle"
+    },
+    {
+        "kanal_adi": "Halk TV",
+        "url": "https://www.canlitv.diy/halk-tv-canli"
+    },
+    {
+        "kanal_adi": "Sözcü TV",
+        "url": "https://www.canlitv.diy/sozcu-tv-izle"
+    },
+    {
+        "kanal_adi": "TV 100",
+        "url": "https://www.canlitv.diy/tv-100"
+    },
+    {
+        "kanal_adi": "360 TV",
+        "url": "https://www.canlitv.diy/360-tv"
+    },
+    {
+        "kanal_adi": "Beyaz TV",
+        "url": "https://www.canlitv.diy/beyaz-tv"
+    },
+    {
+        "kanal_adi": "Tv8.5",
+        "url": "https://www.canlitv.diy/tv85-izle"
+    },
+    {
+        "kanal_adi": "Sports Tv",
+        "url": "https://www.canlitv.diy/sports-tv"
+    },
+    {
+        "kanal_adi": "FB TV",
+        "url": "https://www.canlitv.diy/fb-tv"
+    },
+    {
+        "kanal_adi": "Sıfır TV",
+        "url": "https://www.canlitv.diy/sifir-tv"
+    },
+    {
+        "kanal_adi": "Tay Tv",
+        "url": "https://www.canlitv.diy/tay-tv"
+    },
+    {
+        "kanal_adi": "Yaban TV",
+        "url": "https://www.canlitv.diy/yaban-tv"
+    },
+    {
+        "kanal_adi": "Spacetoon Kids TV",
+        "url": "https://www.canlitv.diy/spacetoon-kids-tv"
+    },
+    {
+        "kanal_adi": "Zarok TV",
+        "url": "https://www.canlitv.diy/zaroktv"
+    },
+    {
+        "kanal_adi": "ARB Güneş TV",
+        "url": "https://www.canlitv.diy/arb-gunes-tv"
+    },
+    {
+        "kanal_adi": "Lider Haber",
+        "url": "https://www.canlitv.diy/lider-haber-tv"
+    },
+    {
+        "kanal_adi": "KRT TV",
+        "url": "https://www.canlitv.diy/krt-tv"
+    },
+    {
+        "kanal_adi": "Bloomberg HT",
+        "url": "https://www.canlitv.diy/bloomberg-ht-tv"
+    },
+    {
+        "kanal_adi": "Akit TV",
+        "url": "https://www.canlitv.diy/akit-tv"
+    },
+    {
+        "kanal_adi": "Ülke TV",
+        "url": "https://www.canlitv.diy/ulke-tv"
+    },
+    {
+        "kanal_adi": "İlke TV",
+        "url": "https://www.canlitv.diy/ilke-tv"
+    },
+    {
+        "kanal_adi": "Tele1 TV",
+        "url": "https://www.canlitv.diy/tele1-tv"
+    },
+    {
+        "kanal_adi": "Yol Tv",
+        "url": "https://www.canlitv.diy/yol-tv"
+    },
+    {
+        "kanal_adi": "Meltem TV",
+        "url": "https://www.canlitv.diy/meltem-tv"
+    },
+    {
+        "kanal_adi": "Cem Tv",
+        "url": "https://www.canlitv.diy/cem-tv"
+    },
+    {
+        "kanal_adi": "Şaban TV",
+        "url": "https://www.canlitv.diy/saban-tv"
+    },
+    {
+        "kanal_adi": "GZT TV",
+        "url": "https://www.canlitv.diy/gzt-tv"
+    },
+    {
+        "kanal_adi": "Tv4",
+        "url": "https://www.canlitv.diy/tv-4"
+    },
+    {
+        "kanal_adi": "tv2",
+        "url": "https://www.canlitv.diy/tv2"
+    },
+    {
+        "kanal_adi": "Ekotürk TV",
+        "url": "https://www.canlitv.diy/ekoturk-tv"
+    },
+    {
+        "kanal_adi": "Tvnet",
+        "url": "https://www.canlitv.diy/tv-net"
+    },
+    {
+        "kanal_adi": "TV 5",
+        "url": "https://www.canlitv.diy/tv-5"
+    },
+    {
+        "kanal_adi": "24 Tv",
+        "url": "https://www.canlitv.diy/24-tv"
+    },
+    {
+        "kanal_adi": "TBMM TV",
+        "url": "https://www.canlitv.diy/tbmm-tv-1"
+    },
+    {
+        "kanal_adi": "Kabe Tv",
+        "url": "https://www.canlitv.diy/kabe-tv"
+    },
+    {
+        "kanal_adi": "Medine Tv",
+        "url": "https://www.canlitv.diy/medine-tv"
+    },
+    {
+        "kanal_adi": "Lalegül Tv",
+        "url": "https://www.canlitv.diy/lalegul-tv"
+    },
+    {
+        "kanal_adi": "Rehber Tv",
+        "url": "https://www.canlitv.diy/rehber-tv"
+    },
+    {
+        "kanal_adi": "Semerkand Tv",
+        "url": "https://www.canlitv.diy/semerkand-tv"
+    },
+    {
+        "kanal_adi": "Dost Tv",
+        "url": "https://www.canlitv.diy/dost-tv"
+    },
+    {
+        "kanal_adi": "Diyanet TV",
+        "url": "https://www.canlitv.diy/diyanet-tv"
+    },
+    {
+        "kanal_adi": "İkra TV",
+        "url": "https://www.canlitv.diy/ikra-tv"
+    },
+    {
+        "kanal_adi": "FM TV",
+        "url": "https://www.canlitv.diy/fm-tv"
+    },
+    {
+        "kanal_adi": "TRT Eba TV",
+        "url": "https://www.canlitv.diy/trt-eba-tv"
+    },
+    {
+        "kanal_adi": "Konya Olay Tv",
+        "url": "https://www.canlitv.diy/konya-olay-tv"
+    },
+    {
+        "kanal_adi": "Luys TV",
+        "url": "https://www.canlitv.diy/luys-tv"
+    },
+    {
+        "kanal_adi": "On4 Tv",
+        "url": "https://www.canlitv.diy/on4-tv"
+    },
+    {
+        "kanal_adi": "Kon TV",
+        "url": "https://www.canlitv.diy/kon-tv"
+    },
+    {
+        "kanal_adi": "Bodrum Kent TV",
+        "url": "https://www.canlitv.diy/bodrum-kent-tv"
+    },
+    {
+        "kanal_adi": "A2 TV",
+        "url": "https://www.canlitv.diy/canli-a2-izle"
+    },
+    {
+        "kanal_adi": "Tv Kayseri",
+        "url": "https://www.canlitv.diy/tv-kayseri"
+    },
+    {
+        "kanal_adi": "TV 41",
+        "url": "https://www.canlitv.diy/tv-41"
+    },
+    {
+        "kanal_adi": "TV 42",
+        "url": "https://www.canlitv.diy/tv-42"
+    },
+    {
+        "kanal_adi": "Bir TV",
+        "url": "https://www.canlitv.diy/bir-tv"
+    },
+    {
+        "kanal_adi": "Gözde TV",
+        "url": "https://www.canlitv.diy/gozde-tv"
+    },
+    {
+        "kanal_adi": "Düzce Tv",
+        "url": "https://www.canlitv.diy/duzce-tv"
+    },
+    {
+        "kanal_adi": "TV 2020",
+        "url": "https://www.canlitv.diy/tv-2020"
+    },
+    {
+        "kanal_adi": "Kıbrıs Ada Tv",
+        "url": "https://www.canlitv.diy/kibris-ada-tv"
+    },
+    {
+        "kanal_adi": "Kıbrıs Genç Tv",
+        "url": "https://www.canlitv.diy/kibris-genc-tv"
+    },
+    {
+        "kanal_adi": "Torba Tv",
+        "url": "https://www.canlitv.diy/torba-tv"
+    },
+    {
+        "kanal_adi": "Kanal Sim",
+        "url": "https://www.canlitv.diy/sim-tv"
+    },
+    {
+        "kanal_adi": "Kardelen Tv",
+        "url": "https://www.canlitv.diy/kardelen-tv"
+    },
+    {
+        "kanal_adi": "OKKU Tv",
+        "url": "https://www.canlitv.diy/okku-tv"
+    },
+    {
+        "kanal_adi": "Kıbrıs Tv",
+        "url": "https://www.canlitv.diy/kibris-tv"
+    },
+    {
+        "kanal_adi": "Tarım Tv",
+        "url": "https://www.canlitv.diy/tarim-tv"
+    },
+    {
+        "kanal_adi": "Köy Tv",
+        "url": "https://www.canlitv.diy/koy-tv"
+    },
+    {
+        "kanal_adi": "Çiftçi Tv",
+        "url": "https://www.canlitv.diy/cifci-tv"
+    },
+    {
+        "kanal_adi": "Toprak TV",
+        "url": "https://www.canlitv.diy/toprak-tv"
+    },
+    {
+        "kanal_adi": "Xezer Tv",
+        "url": "https://www.canlitv.diy/xezer-tv"
+    },
+    {
+        "kanal_adi": "Az TV",
+        "url": "https://www.canlitv.diy/az-tv"
+    },
+    {
+        "kanal_adi": "El Tv",
+        "url": "https://www.canlitv.diy/el-tv"
+    },
+    {
+        "kanal_adi": "ARB TV",
+        "url": "https://www.canlitv.diy/arb-tv"
+    },
+    {
+        "kanal_adi": "Medeniyet Tv",
+        "url": "https://www.canlitv.diy/medeniyet-tv"
+    },
+    {
+        "kanal_adi": "Günaz Tv",
+        "url": "https://www.canlitv.diy/gunaz-tv"
+    },
+    {
+        "kanal_adi": "CBC Tv",
+        "url": "https://www.canlitv.diy/cbc-tv"
+    },
+    {
+        "kanal_adi": "İctimai Tv",
+        "url": "https://www.canlitv.diy/ictimai-tv"
+    },
+    {
+        "kanal_adi": "İdman Tv",
+        "url": "https://www.canlitv.diy/idman-tv"
+    },
+    {
+        "kanal_adi": "Space TV",
+        "url": "https://www.canlitv.diy/space-tv"
+    },
+    {
+        "kanal_adi": "ARB 24 TV",
+        "url": "https://www.canlitv.diy/arb-24-tv"
+    },
+    {
+        "kanal_adi": "Dünya TV",
+        "url": "https://www.canlitv.diy/dunyatv-az"
+    },
+    {
+        "kanal_adi": "Atv Azad TV",
+        "url": "https://www.canlitv.diy/azad-tv"
+    },
+    {
+        "kanal_adi": "Real Tv",
+        "url": "https://www.canlitv.diy/real-tv"
+    },
+    {
+        "kanal_adi": "Az Star TV",
+        "url": "https://www.canlitv.diy/azstar-tv"
+    },
+    {
+        "kanal_adi": "Bakü TV",
+        "url": "https://www.canlitv.diy/baku-tv"
+    },
+    {
+        "kanal_adi": "AnewZ TV",
+        "url": "https://www.canlitv.diy/anewz-tv"
+    },
+    {
+        "kanal_adi": "Tv 1",
+        "url": "https://www.canlitv.diy/tv-1"
+    },
+    {
+        "kanal_adi": "Sönmez TV",
+        "url": "https://www.canlitv.diy/sonmez-tv"
+    },
+    {
+        "kanal_adi": "Ekol TV",
+        "url": "https://www.canlitv.diy/ekol-tv"
+    },
+    {
+        "kanal_adi": "Salihli Sonsöz TV",
+        "url": "https://www.canlitv.diy/salihli-sonsoz-tv"
+    },
+    {
+        "kanal_adi": "ON6 TV",
+        "url": "https://www.canlitv.diy/on6-tv"
+    },
+    {
+        "kanal_adi": "Güneydoğu Tv",
+        "url": "https://www.canlitv.diy/guneydogu-tv"
+    },
+    {
+        "kanal_adi": "TV52",
+        "url": "https://www.canlitv.diy/tv-52"
+    },
+    {
+        "kanal_adi": "Köroğlu Tv",
+        "url": "https://www.canlitv.diy/koroglu-tv"
+    },
+    {
+        "kanal_adi": "Mercan Tv",
+        "url": "https://www.canlitv.diy/mercan-tv"
+    },
+    {
+        "kanal_adi": "Ruha Tv",
+        "url": "https://www.canlitv.diy/ruha-tv"
+    },
+    {
+        "kanal_adi": "Es Tv",
+        "url": "https://www.canlitv.diy/es-tv"
+    },
+    {
+        "kanal_adi": "Aksu Tv",
+        "url": "https://www.canlitv.diy/aksu-tv"
+    },
+    {
+        "kanal_adi": "As Tv",
+        "url": "https://www.canlitv.diy/as-tv-bursa"
+    },
+    {
+        "kanal_adi": "Kay Tv",
+        "url": "https://www.canlitv.diy/kay-tv"
+    },
+    {
+        "kanal_adi": "World Türk TV",
+        "url": "https://www.canlitv.diy/world-turk-tv"
+    },
+    {
+        "kanal_adi": "Alanya Tv",
+        "url": "https://www.canlitv.diy/alanya-tv"
+    },
+    {
+        "kanal_adi": "Alanya Postası TV",
+        "url": "https://www.canlitv.diy/alanya-postasi-tv"
+    },
+    {
+        "kanal_adi": "Edirne Tv",
+        "url": "https://www.canlitv.diy/edirne-tv"
+    },
+    {
+        "kanal_adi": "Malatya Vuslat TV",
+        "url": "https://www.canlitv.diy/vuslat-tv"
+    },
+    {
+        "kanal_adi": "Ahi Tv",
+        "url": "https://www.canlitv.diy/ahi-tv"
+    },
+    {
+        "kanal_adi": "Urfanatik TV",
+        "url": "https://www.canlitv.diy/urfanatik-tv"
+    },
+    {
+        "kanal_adi": "Milli Piyango TV",
+        "url": "https://www.canlitv.diy/milli-piyango-tv"
+    },
+    {
+        "kanal_adi": "Kudüs Tv",
+        "url": "https://www.canlitv.diy/kudus-tv"
+    },
+    {
+        "kanal_adi": "Diyar Tv",
+        "url": "https://www.canlitv.diy/diyar-tv"
+    },
+    {
+        "kanal_adi": "Tempo Tv",
+        "url": "https://www.canlitv.diy/tempo-tv"
+    },
+    {
+        "kanal_adi": "Bursa Tv",
+        "url": "https://www.canlitv.diy/bursa-tv"
+    },
+    {
+        "kanal_adi": "İçel Tv",
+        "url": "https://www.canlitv.diy/icel-tv"
+    },
+    {
+        "kanal_adi": "Akıllı Tv",
+        "url": "https://www.canlitv.diy/akilli-tv"
+    },
+    {
+        "kanal_adi": "Çay Tv",
+        "url": "https://www.canlitv.diy/cay-tv"
+    },
+    {
+        "kanal_adi": "Mavi Karadeniz Tv",
+        "url": "https://www.canlitv.diy/mavi-karadeniz-tv"
+    },
+    {
+        "kanal_adi": "Nur Tv",
+        "url": "https://www.canlitv.diy/nur-tv"
+    },
+    {
+        "kanal_adi": "Mpl Tv",
+        "url": "https://www.canlitv.diy/mpl-tv"
+    },
+    {
+        "kanal_adi": "Show Türk Tv",
+        "url": "https://www.canlitv.diy/show-turk-tv"
+    },
+    {
+        "kanal_adi": "Erciyes Tv",
+        "url": "https://www.canlitv.diy/erciyes-tv"
+    },
+    {
+        "kanal_adi": "Amasya Art Tv",
+        "url": "https://www.canlitv.diy/art-tv-amasya"
+    },
+    {
+        "kanal_adi": "Marmara Tv",
+        "url": "https://www.canlitv.diy/marmara-tv"
+    },
+    {
+        "kanal_adi": "Sun Tv",
+        "url": "https://www.canlitv.diy/sun-tv"
+    },
+    {
+        "kanal_adi": "Konya Ün Tv",
+        "url": "https://www.canlitv.diy/un-tv-konya"
+    },
+    {
+        "kanal_adi": "Line Tv",
+        "url": "https://www.canlitv.diy/line-tv"
+    },
+    {
+        "kanal_adi": "Kent Deha Tv",
+        "url": "https://www.canlitv.diy/kent-deha-tv"
+    },
+    {
+        "kanal_adi": "Etv Manisa",
+        "url": "https://www.canlitv.diy/e-tv-manisa"
+    },
+    {
+        "kanal_adi": "Er TV",
+        "url": "https://www.canlitv.diy/ertv"
+    },
+    {
+        "kanal_adi": "Can Tv",
+        "url": "https://www.canlitv.diy/can-tv"
+    },
+    {
+        "kanal_adi": "Anadolu Dost TV",
+        "url": "https://www.canlitv.diy/anadolu-dost-tv"
+    },
+    {
+        "kanal_adi": "BRTV",
+        "url": "https://www.canlitv.diy/brtv"
+    },
+    {
+        "kanal_adi": "GRT TV",
+        "url": "https://www.canlitv.diy/grt-tv"
+    },
+    {
+        "kanal_adi": "İmedi Tv",
+        "url": "https://www.canlitv.diy/imedi-tv"
+    },
+    {
+        "kanal_adi": "Ege Live TV",
+        "url": "https://www.canlitv.diy/ege-live-tv"
+    },
+    {
+        "kanal_adi": "Huda Tv",
+        "url": "https://www.canlitv.diy/huda-tv"
+    },
+    {
+        "kanal_adi": "Türkmeneli TV",
+        "url": "https://www.canlitv.diy/turkmeneli-tv"
+    },
+    {
+        "kanal_adi": "Agro TV",
+        "url": "https://www.canlitv.diy/agro-tv"
+    },
+    {
+        "kanal_adi": "İzmir Türk TV",
+        "url": "https://www.canlitv.diy/izmir-turk-tv"
+    },
+    {
+        "kanal_adi": "Tokat Süper Tv",
+        "url": "https://www.canlitv.diy/tokat-super-tv"
+    },
+    {
+        "kanal_adi": "Hunat TV",
+        "url": "https://www.canlitv.diy/hunat-tv"
+    },
+    {
+        "kanal_adi": "Ton Tv",
+        "url": "https://www.canlitv.diy/ton-tv"
+    },
+    {
+        "kanal_adi": "Bizimev Tv",
+        "url": "https://www.canlitv.diy/bizimev-tv"
+    },
+    {
+        "kanal_adi": "Altaş Tv",
+        "url": "https://www.canlitv.diy/altas-tv"
+    },
+    {
+        "kanal_adi": "Deniz Postası TV",
+        "url": "https://www.canlitv.diy/deniz-postasi-tv"
+    },
+    {
+        "kanal_adi": "Afroturk TV",
+        "url": "https://www.canlitv.diy/afroturk-tv"
+    },
+    {
+        "kanal_adi": "Anadolu Net TV",
+        "url": "https://www.canlitv.diy/anadolu-net-tv"
+    },
+    {
+        "kanal_adi": "Life Tv",
+        "url": "https://www.canlitv.diy/kayseri-life-tv"
+    },
+    {
+        "kanal_adi": "Üsküdar Üniversitesi TV",
+        "url": "https://www.canlitv.diy/uskudar-universitesi-tv"
+    },
+    {
+        "kanal_adi": "Dim TV",
+        "url": "https://www.canlitv.diy/dim-tv"
+    },
+    {
+        "kanal_adi": "Ankara Büyükşehir Belediyesi TV",
+        "url": "https://www.canlitv.diy/abb-tv"
+    },
+    {
+        "kanal_adi": "Al Sunnah TV",
+        "url": "https://www.canlitv.diy/al-sunnah-tv"
+    },
+    {
+        "kanal_adi": "Yaşlık Tv Türkmenistan",
+        "url": "https://www.canlitv.diy/yaslik-tv-turkmenistan"
+    },
+    {
+        "kanal_adi": "TV38",
+        "url": "https://www.canlitv.diy/tv-38"
+    },
+    {
+        "kanal_adi": "ETV Kayseri",
+        "url": "https://www.canlitv.diy/etv-kayseri"
+    },
+    {
+        "kanal_adi": "DW TV Europe",
+        "url": "https://www.canlitv.diy/dw-tv-europe"
+    },
+    {
+        "kanal_adi": "Press Tv",
+        "url": "https://www.canlitv.diy/press-tv"
+    },
+    {
+        "kanal_adi": "Fortuna Tv",
+        "url": "https://www.canlitv.diy/fortunatv"
+    },
+    {
+        "kanal_adi": "KTV Kazakistan",
+        "url": "https://www.canlitv.diy/ktv-kazakistan"
+    },
+    {
+        "kanal_adi": "Kontra Tv",
+        "url": "https://www.canlitv.diy/kontratv"
+    },
+    {
+        "kanal_adi": "TV Den",
+        "url": "https://www.canlitv.diy/tvden"
+    },
+    {
+        "kanal_adi": "Çankırı Tv",
+        "url": "https://www.canlitv.diy/cankiri-tv"
+    },
+    {
+        "kanal_adi": "NASA TV",
+        "url": "https://www.canlitv.diy/nasa-tv"
+    },
+    {
+        "kanal_adi": "Türkmenistan Tv",
+        "url": "https://www.canlitv.diy/turkmenistan-tv"
+    },
+    {
+        "kanal_adi": "Tv Sudbaden",
+        "url": "https://www.canlitv.diy/tv-sudbaden"
+    },
+    {
+        "kanal_adi": "Franken Tv",
+        "url": "https://www.canlitv.diy/franken-tv"
+    },
+    {
+        "kanal_adi": "Oberpfalz Tv",
+        "url": "https://www.canlitv.diy/oberpfalz-tv"
+    },
+    {
+        "kanal_adi": "FRT TV",
+        "url": "https://www.canlitv.diy/frt-tv"
+    },
+    {
+        "kanal_adi": "Niederbayern TV",
+        "url": "https://www.canlitv.diy/niederbayern-tv"
+    },
+    {
+        "kanal_adi": "Askabat TV",
+        "url": "https://www.canlitv.diy/askabat-tv"
+    },
+    {
+        "kanal_adi": "Rudaw Tv",
+        "url": "https://www.canlitv.diy/rudawtv"
+    },
+    {
+        "kanal_adi": "Altın Asır Tv",
+        "url": "https://www.canlitv.diy/altin-asir-tv"
+    },
+    {
+        "kanal_adi": "Makkah Tv",
+        "url": "https://www.canlitv.diy/makkah-tv "
+    },
+    {
+        "kanal_adi": "Kent Türk TV",
+        "url": "https://www.canlitv.diy/kent-turk-tv"
+    },
+    {
+        "kanal_adi": "OWAZY TV",
+        "url": "https://www.canlitv.diy/owazy-tv"
+    },
+    {
+        "kanal_adi": "Trakya Türk Tv",
+        "url": "https://www.canlitv.diy/trakya-turk-tv"
+    },
+    {
+        "kanal_adi": "Tv 264",
+        "url": "https://www.canlitv.diy/tv-264"
+    },
+    {
+        "kanal_adi": "Kocaeli Tv",
+        "url": "https://www.canlitv.diy/kocaeli-tv"
+    },
+    {
+        "kanal_adi": "Türkmen Sport Tv",
+        "url": "https://www.canlitv.diy/turkmen-sport-tv"
+    },
+    {
+        "kanal_adi": "Tüm televizyon reytinglerini göster »",
+        "url": "https://www.canlitv.diyrating/?tur=tv"
+    }
+]
