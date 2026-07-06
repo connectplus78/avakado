@@ -26,7 +26,7 @@ jobs:
         pip install requests beautifulsoup4
 
     - name: Botu Çalıştır
-      run: python guncelleme.py
+      run: python main.py
 
     - name: Değişiklikleri Gönder
       run: |
