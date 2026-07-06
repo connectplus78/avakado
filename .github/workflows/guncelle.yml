@@ -26,7 +26,7 @@ jobs:
         pip install requests beautifulsoup4
 
     - name: Botu Çalıştır
-      run: python güncelleme.py
+      run: python klasor_adi/güncelleme.py
 
     - name: Değişiklikleri Gönder
       run: |
