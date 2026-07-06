@@ -1,4 +1,4 @@
-name: Canlı TV Güncelleyici Bot (Saatlik)
+name: Canlı TV Güncelleyici Bot
 
 on:
   schedule:
@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # Git push yapabilmek için bu izin şart
+      contents: write
 
     steps:
     - name: Depoyu Klonla
@@ -28,11 +28,10 @@ jobs:
     - name: Botu Çalıştır
       run: python güncelleme.py
 
-    - name: Değişiklikleri Kaydet ve Gönder
+    - name: Değişiklikleri Gönder
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         git add kanallar.json
-        # Değişiklik varsa commit et, yoksa sessiz kal
-        git commit -m "Saatlik Güncelleme: Canlı TV Listesi Yenilendi" || echo "Değişiklik yok."
+        git commit -m "Saatlik güncelleme: kanallar.json yenilendi" || echo "Değişiklik yok."
         git push
