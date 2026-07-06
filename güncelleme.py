@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 def kanallari_cek():
     url = "https://www.canlitv.diy/tr"
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/120.0.0.0"
     }
     
     print("Veriler çekiliyor...")
@@ -24,7 +24,6 @@ def kanallari_cek():
                 kanal_adi = link.text.strip() if link.text else "Bilinmeyen Kanal"
                 tam_url = href if href.startswith("http") else f"https://www.canlitv.diy{href}"
                 
-                # Tekrar edenleri engelleme
                 if not any(k['url'] == tam_url for k in kanal_listesi):
                     kanal_listesi.append({
                         "kanal_adi": kanal_adi,
@@ -39,9 +38,12 @@ def kanallari_cek():
 
 def kaydet(veri):
     if veri:
-        with open("kanallar.json", "w", encoding="utf-8") as f:
-            json.dump(veri, f, ensure_ascii=False, indent=4)
-        print(f"Başarıyla {len(veri)} kanal kaydedildi.")
+        with open("kanallar.m3u", "w", encoding="utf-8") as f:
+            f.write("#EXTM3U\n")
+            for kanal in veri:
+                f.write(f"#EXTINF:-1,{kanal['kanal_adi']}\n")
+                f.write(f"{kanal['url']}\n")
+        print(f"Başarıyla {len(veri)} kanal 'kanallar.m3u' dosyasına kaydedildi.")
     else:
         print("Kaydedilecek veri bulunamadı.")
 
