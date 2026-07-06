@@ -1,4 +1,4 @@
-name: Canlı TV Güncelleyici Bot
+name: Canlı TV M3U Güncelleyici
 
 on:
   schedule:
@@ -15,9 +15,6 @@ jobs:
     - name: Depoyu Klonla
       uses: actions/checkout@v4
 
-    - name: Dosya Yapısını Listele (Hata Ayıklama İçin)
-      run: ls -R
-
     - name: Python Kur
       uses: actions/setup-python@v5
       with:
@@ -29,12 +26,12 @@ jobs:
         pip install requests beautifulsoup4
 
     - name: Botu Çalıştır
-      run: python güncelleme.py
+      run: python guncelleme.py
 
     - name: Değişiklikleri Gönder
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        git add kanallar.json
-        git commit -m "Saatlik güncelleme" || echo "Değişiklik yok."
+        git add kanallar.m3u
+        git commit -m "Saatlik M3U Güncellemesi" || echo "Değişiklik yok."
         git push
