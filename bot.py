@@ -13,26 +13,21 @@ def kanallari_cek():
     try:
         response = requests.get(url, headers=headers, timeout=15)
         if response.status_code != 200:
-            print(status_code)
+            print(f"Hata: {response.status_code}")
             return []
         
         soup = BeautifulSoup(response.content, "html.parser")
         kanal_listesi = []
         
-        # Sitedeki kanal kartlarını veya linklerini hedef alıyoruz
-        # Not: Sitenin HTML yapısına göre bu seçiciler (selector) değişiklik gösterebilir.
-        # Genellikle canlı TV sitelerinde kanallar 'a' etiketleri içinde yer alır.
         for link in soup.find_all("a", href=True):
             href = link['href']
-            # Sadece kanal sayfalarını filtrelemek için bir kontrol (örn: sonu .html biten veya belirli klasördeki linkler)
+            # Link filtreleme
             if "/canli-" in href or "tv" in href:
                 kanal_adi = link.text.strip() if link.text else "Bilinmeyen Kanal"
-                
-                # Tam URL'yi oluşturma
                 tam_url = href if href.startswith("http") else f"https://www.canlitv.diy{href}"
                 
-                # Mükerrer (tekrar eden) kayıtları önlemek için kontrol
-                if not any(k['url'] == tam_url for k in listesi):
+                # 'listesi' hatası düzeltildi:
+                if not any(k['url'] == tam_url for k in kanal_listesi):
                     kanal_listesi.append({
                         "kanal_adi": kanal_adi,
                         "url": tam_url
@@ -46,7 +41,6 @@ def kanallari_cek():
 
 def kaydet(veri):
     if veri:
-        # Çıktıyı JSON formatında kaydediyoruz
         with open("kanallar.json", "w", encoding="utf-8") as f:
             json.dump(veri, f, ensure_ascii=False, indent=4)
         print(f"Başarıyla {len(veri)} kanal 'kanallar.json' dosyasına kaydedildi.")
