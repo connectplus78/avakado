@@ -1,50 +1,53 @@
 import time
-import re
+import json
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
-def get_m3u8_from_page(driver, kanal_url):
-    """Verilen sayfayı açar ve m3u8 linkini bulmaya çalışır."""
-    try:
-        driver.get(kanal_url)
-        time.sleep(5)  # Sayfanın yüklenmesi için bekle
-        
-        # Sayfa kaynağında m3u8 uzantılı link ara
-        page_source = driver.page_source
-        match = re.search(r'https?://[^\s"\'<>]+?\.m3u8', page_source)
-        
-        return match.group(0) if match else None
-    except Exception:
-        return None
-
-def main():
-    # Kanal listenizi buraya ekleyin
-    kanallar = [
-        {"adi": "Kanal 7", "url": "https://www.canlitv.diy/tr/kanal7"},
-        # Diğer kanalları buraya ekleyebilirsiniz...
-    ]
-
+def get_m3u8_links():
     chrome_options = Options()
     chrome_options.add_argument("--headless")
-    driver = webdriver.Chrome(options=chrome_options)
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    # Ağ trafiğini izlemek için loglama özelliği
+    chrome_options.set_capability('goog:loggingPrefs', {'performance': 'ALL'})
+    
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+    
+    # Kanal listesi
+    kanallar = [
+        {"adi": "Kanal 7", "url": "https://www.canlitv.diy/tr/kanal7"}
+    ]
+    
+    sonuc = []
+    
+    for k in kanallar:
+        print(f"{k['adi']} taranıyor...")
+        driver.get(k['url'])
+        time.sleep(10) # Videonun yüklenmesi için bekle
+        
+        logs = driver.get_log('performance')
+        for entry in logs:
+            log = json.loads(entry['message'])['message']
+            if log['method'] == 'Network.requestWillBeSent':
+                url = log['params']['request']['url']
+                if ".m3u8" in url:
+                    sonuc.append({"adi": k['adi'], "url": url})
+                    break
+    
+    driver.quit()
+    return sonuc
 
+def kaydet(veri):
     with open("kanallar.m3u", "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
-        
-        for kanal in kanallar:
-            print(f"{kanal['adi']} işleniyor...")
-            m3u8_link = get_m3u8_from_page(driver, kanal['url'])
-            
-            if m3u8_link:
-                f.write(f"#EXTINF:-1,{kanal['adi']}\n")
-                f.write(f"{m3u8_link}\n")
-                print(f"-> Başarılı: {m3u8_link}")
-            else:
-                print(f"-> Hata: Link bulunamadı.")
-
-    driver.quit()
-    print("\nİşlem tamamlandı. 'kanallar.m3u' dosyası oluşturuldu.")
+        for k in veri:
+            f.write(f"#EXTINF:-1,{k['adi']}\n{k['url']}\n")
 
 if __name__ == "__main__":
-    main()
+    veriler = get_m3u8_links()
+    if veriler:
+        kaydet(veriler)
+    else:
+        print("Hiç link bulunamadı!")
