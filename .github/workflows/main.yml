@@ -23,7 +23,8 @@ jobs:
     - name: Gerekli Yazılımları ve Selenium'u Yükle
       run: |
         sudo apt-get update
-        sudo apt-get install -y google-chrome-stable
+        # libgbm-dev eklenmesi, Chrome'un headless modda çalışması için kritiktir
+        sudo apt-get install -y google-chrome-stable libgbm-dev
         python -m pip install --upgrade pip
         pip install selenium webdriver-manager
 
@@ -35,5 +36,5 @@ jobs:
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         git add kanallar.m3u
-        git commit -m "M3U Listesi Güncellendi" || echo "Değişiklik yok."
+        git commit -m "Saatlik M3U Güncellemesi" || echo "Değişiklik yok."
         git push
