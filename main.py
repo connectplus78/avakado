@@ -1,52 +1,50 @@
-import json
-import requests
-from bs4 import BeautifulSoup
+import time
+import re
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from webdriver_manager.chrome import ChromeDriverManager
 
-def kanallari_cek():
-    url = "https://www.canlitv.diy/tr"
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/120.0.0.0"
-    }
-    
-    print("Veriler çekiliyor...")
+def get_m3u8_from_page(driver, kanal_url):
+    """Verilen sayfayı açar ve m3u8 linkini bulmaya çalışır."""
     try:
-        response = requests.get(url, headers=headers, timeout=15)
-        if response.status_code != 200:
-            print(f"Hata: {response.status_code}")
-            return []
+        driver.get(kanal_url)
+        time.sleep(5)  # Sayfanın yüklenmesi için bekle
         
-        soup = BeautifulSoup(response.content, "html.parser")
-        kanal_listesi = []
+        # Sayfa kaynağında m3u8 uzantılı link ara
+        page_source = driver.page_source
+        match = re.search(r'https?://[^\s"\'<>]+?\.m3u8', page_source)
         
-        for link in soup.find_all("a", href=True):
-            href = link['href']
-            if "/canli-" in href or "tv" in href:
-                kanal_adi = link.text.strip() if link.text else "Bilinmeyen Kanal"
-                tam_url = href if href.startswith("http") else f"https://www.canlitv.diy{href}"
-                
-                if not any(k['url'] == tam_url for k in kanal_listesi):
-                    kanal_listesi.append({
-                        "kanal_adi": kanal_adi,
-                        "url": tam_url
-                    })
-        
-        return kanal_listesi
+        return match.group(0) if match else None
+    except Exception:
+        return None
 
-    except Exception as e:
-        print(f"Hata oluştu: {e}")
-        return []
+def main():
+    # Kanal listenizi buraya ekleyin
+    kanallar = [
+        {"adi": "Kanal 7", "url": "https://www.canlitv.diy/tr/kanal7"},
+        # Diğer kanalları buraya ekleyebilirsiniz...
+    ]
 
-def kaydet(veri):
-    if veri:
-        with open("kanallar.m3u", "w", encoding="utf-8") as f:
-            f.write("#EXTM3U\n")
-            for kanal in veri:
-                f.write(f"#EXTINF:-1,{kanal['kanal_adi']}\n")
-                f.write(f"{kanal['url']}\n")
-        print(f"Başarıyla {len(veri)} kanal 'kanallar.m3u' dosyasına kaydedildi.")
-    else:
-        print("Kaydedilecek veri bulunamadı.")
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")
+    driver = webdriver.Chrome(options=chrome_options)
+
+    with open("kanallar.m3u", "w", encoding="utf-8") as f:
+        f.write("#EXTM3U\n")
+        
+        for kanal in kanallar:
+            print(f"{kanal['adi']} işleniyor...")
+            m3u8_link = get_m3u8_from_page(driver, kanal['url'])
+            
+            if m3u8_link:
+                f.write(f"#EXTINF:-1,{kanal['adi']}\n")
+                f.write(f"{m3u8_link}\n")
+                print(f"-> Başarılı: {m3u8_link}")
+            else:
+                print(f"-> Hata: Link bulunamadı.")
+
+    driver.quit()
+    print("\nİşlem tamamlandı. 'kanallar.m3u' dosyası oluşturuldu.")
 
 if __name__ == "__main__":
-    kanallar = kanallari_cek()
-    kaydet(kanallar)
+    main()
