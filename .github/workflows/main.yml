@@ -2,7 +2,7 @@ name: Canlı TV M3U Güncelleyici
 
 on:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0 0 * * *' # Her gün gece yarısı günceller
   workflow_dispatch: 
 
 jobs:
@@ -20,21 +20,16 @@ jobs:
       with:
         python-version: '3.10'
 
-    - name: Gerekli Yazılımları ve Selenium'u Yükle
-      run: |
-        sudo apt-get update
-        # libgbm-dev eklenmesi, Chrome'un headless modda çalışması için kritiktir
-        sudo apt-get install -y google-chrome-stable libgbm-dev
-        python -m pip install --upgrade pip
-        pip install selenium webdriver-manager
+    - name: Kütüphaneleri Yükle
+      run: pip install requests
 
     - name: Botu Çalıştır
       run: python main.py
 
-    - name: Değişiklikleri Git ile Gönder
+    - name: Değişiklikleri Kaydet ve Gönder
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         git add kanallar.m3u
-        git commit -m "Saatlik M3U Güncellemesi" || echo "Değişiklik yok."
+        git commit -m "Güncel M3U listesi çekildi" || echo "Değişiklik yok."
         git push
