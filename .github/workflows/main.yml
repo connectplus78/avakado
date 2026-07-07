@@ -1,12 +1,12 @@
-name: Canlı TV M3U Güncelleyici
+name: Kanal 7 Guncelleme Botu
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Her gün gece yarısı günceller
-  workflow_dispatch: 
+    - cron: '0 * * * *' # Her saat başı çalışır
+  workflow_dispatch:     # Manuel çalıştırma butonu ekler
 
 jobs:
-  build:
+  bot:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -20,16 +20,16 @@ jobs:
       with:
         python-version: '3.10'
 
-    - name: Kütüphaneleri Yükle
+    - name: Gerekli Kütüphaneleri Yükle
       run: pip install requests
 
     - name: Botu Çalıştır
       run: python main.py
 
-    - name: Değişiklikleri Kaydet ve Gönder
+    - name: Değişikliği GitHub'a Gönder
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         git add kanallar.m3u
-        git commit -m "Güncel M3U listesi çekildi" || echo "Değişiklik yok."
+        git commit -m "Bot: Kanal 7 M3U Güncellendi" || echo "Değişiklik yok."
         git push
