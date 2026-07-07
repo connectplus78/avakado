@@ -20,20 +20,20 @@ jobs:
       with:
         python-version: '3.10'
 
-    - name: Gerekli Yazılımları Yükle
+    - name: Gerekli Yazılımları ve Selenium'u Yükle
       run: |
         sudo apt-get update
         sudo apt-get install -y google-chrome-stable
         python -m pip install --upgrade pip
-        pip install requests beautifulsoup4 selenium webdriver-manager
+        pip install selenium webdriver-manager
 
     - name: Botu Çalıştır
       run: python main.py
 
-    - name: Değişiklikleri Gönder
+    - name: Değişiklikleri Git ile Gönder
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         git add kanallar.m3u
-        git commit -m "Saatlik M3U Güncellemesi" || echo "Değişiklik yok."
+        git commit -m "M3U Listesi Güncellendi" || echo "Değişiklik yok."
         git push
